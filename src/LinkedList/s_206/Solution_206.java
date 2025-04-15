@@ -1,36 +1,8 @@
-package s_206;
+package LinkedList.s_206;
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution_206 {
-    public static void main(String[] args) {
-        ListNode o5 = new ListNode(5, null);
-        var o4 = new ListNode(4, o5);
-        var o3 = new ListNode(3, o4);
-        var o2 = new ListNode(2, o3);
-        var o1 = new ListNode(1, o2);
+import LinkedList.ListNode;
 
-        System.out.println(o1);
-        o1 = reverseList3(o1);
-        System.out.println(o1);
-    }
-
-
-    public static class ListNode {
-      int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
+public class Solution_206 {
 
     //  方法1:反向构造新的链表
     public ListNode reverseList1(ListNode o1) {
